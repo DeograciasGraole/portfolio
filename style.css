@@ -140,7 +140,14 @@ header {
   padding: 20px;
   border-radius: 7px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
+
+/* .section-work-Card:hover {
+  /* background-color: yellow; */
+/* Opera *
+  transform: scale(1.1);
+} */
 
 .order {
   order: 1;
@@ -156,8 +163,14 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
+.section-work-Card:hover {
+  /* background-color: yellow; */
+  /* Opera */
+  transform: scale(1.1);
+}
 .section-work-Card-right {
   width: 100%;
   height: 100%;
@@ -311,6 +324,10 @@ header {
   width: 90px;
   height: 70px;
   border-radius: 7px;
+  transition: transform 0.3s ease-in-out;
+}
+.carousel-content nav:hover {
+  transform: scale(1.1);
 }
 
 .logo-html {
