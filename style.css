@@ -143,12 +143,6 @@ header {
   transition: transform 0.3s ease-in-out;
 }
 
-/* .section-work-Card:hover {
-  /* background-color: yellow; */
-/* Opera *
-  transform: scale(1.1);
-} */
-
 .order {
   order: 1;
 }
@@ -166,11 +160,10 @@ header {
   transition: transform 0.3s ease-in-out;
 }
 
-.section-work-Card:hover {
-  /* background-color: yellow; */
-  /* Opera */
+/*  .section-work-Card:hover {
   transform: scale(1.1);
-}
+} */
+
 .section-work-Card-right {
   width: 100%;
   height: 100%;
@@ -326,9 +319,10 @@ header {
   border-radius: 7px;
   transition: transform 0.3s ease-in-out;
 }
-.carousel-content nav:hover {
+
+/* .carousel-content nav:hover {
   transform: scale(1.1);
-}
+} */
 
 .logo-html {
   width: 30px;
