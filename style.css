@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 html {
+  
   width: 100%;
 
   overflow-x: hidden;
 }
 body {
+  
   font-family: "Roboto", sans-serif;
   width: 100%;
   height: 100%;
@@ -19,11 +22,13 @@ body {
   /* background-color: antiquewhite; */
 }
 header {
+  
   width: 100%;
   height: 80px;
   background-color: #fff;
 }
 .header-nav {
+  
   display: flex;
   justify-content: space-between;
   padding: 0 80px;
@@ -34,22 +39,27 @@ header {
   color: #565de8;
 }
 .header-nav p {
+  
   font-weight: 900;
   font-size: 18px;
 }
 .header-nav ul {
+  
   display: flex;
   gap: 12px;
 }
 .header-nav ul li {
+  
   list-style: none;
   color: black;
 }
 .header-nav ion-icon {
+  
   display: none;
 }
 /*SECTION LANDING PAGE**************************************************/
 .landing-section {
+  
   width: 100%;
   height: 500px;
   background-color: #fff;
@@ -63,6 +73,7 @@ header {
   background-position: center;
 }
 .landing-page {
+  
   margin-top: 70px;
   width: 70%;
   height: 300px;
@@ -71,14 +82,17 @@ header {
   gap: 12px;
 }
 .landing-page-part {
+  
   width: 35%;
 }
 .landing-page-part-name {
+  
   font-size: 36px;
   font-weight: 900;
   color: #25253e;
 }
 .landing-page-description {
+  
   color: #25253e;
   font-size: 15px;
   font-weight: 400;
@@ -86,6 +100,7 @@ header {
   line-height: 1.19;
 }
 .landing-page-button {
+  
   margin-top: 18px;
   width: 200px;
   padding: 0;
@@ -93,17 +108,21 @@ header {
   color: #565de8;
 }
 .landing-page-button a {
+  
   text-decoration: none;
 }
 .landing-page-icon {
+  
   display: flex;
   gap: 5px;
 }
 .landing-page-icon-icon {
+  
   font-size: 23px;
 }
 /* Section work*************************************/
 .section-work {
+  
   width: 100%;
 
   height: 2000%;
@@ -115,6 +134,7 @@ header {
   gap: 96px;
 }
 .section-work-Card {
+  
   width: 1000px;
   height: 370px;
   background-color: #ffffff;
@@ -127,10 +147,12 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .order {
+  
   order: 1;
 }
 
 .section-work-Card-left {
+  
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -143,32 +165,39 @@ header {
   /* background: fixed; */
 }
 .section-work-Card-right {
+  
   width: 100%;
   height: 100%;
 }
 .section-work-Card-right {
+  
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 10px;
 }
 .Card-right-title {
+  
   color: #25253e;
   margin-top: 32px;
 }
 .Card-right-tools {
+  
   display: flex;
   gap: 7px;
   align-items: center;
 }
 .Card-right-tools li {
+  
   list-style: none;
   font-size: 12px;
 }
 .Card-right-tools-first {
+  
   font-weight: 900;
 }
 .Card-right-tools-li-special {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,19 +205,23 @@ header {
   font-weight: 0;
 }
 .Card-right-description {
+  
   color: #25253e;
 }
 
 .Card-right-tools-li-special ion-icon {
+  
   font-size: 7px;
 }
 
 .Card-right-language {
+  
   display: flex;
   gap: 12px;
   align-items: center;
 }
 .Card-right-language p {
+  
   background-color: #c7d3f879;
   color: #565de8;
   padding: 4px 8px;
@@ -196,6 +229,7 @@ header {
   font-size: 12px;
 }
 .card-right-button {
+  
   text-decoration: none;
   color: #565de8;
   width: 100px;
@@ -206,12 +240,14 @@ header {
   margin-top: 18px;
 }
 .card-right-button:hover {
+  
   background-color: #565de8;
   color: #fff;
   cursor: pointer;
 }
 
 .card-right-button:active {
+  
   background-color: #09109b;
   color: #fff;
   cursor: pointer;
@@ -226,6 +262,7 @@ header {
 /*ABAOUT ME SECTION************************/
 
 .About-me {
+  
   width: 100%;
 
   height: 500px;
@@ -242,6 +279,7 @@ header {
 
 .About-me-left,
 .About-me-right {
+  
   width: 504px;
   height: 300px;
   padding: 10px;
@@ -252,25 +290,30 @@ header {
 }
 
 .About-me-left h1 {
+  
   font-size: 36px;
   font-weight: 900;
   color: #25253e;
 }
 .About-me-left .card-right-button {
+  
   width: 150px;
   /* padding: 5px 40px; */
   margin-top: 0px;
 }
 .About-me-left .anding-page-description {
+  
   line-height: 1.06;
 }
 .about-me-carousel {
+  
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
 .carousel-header {
+  
   display: flex;
   justify-content: space-between;
   font-size: 18px;
@@ -282,16 +325,19 @@ header {
 }
 
 .border-bottom {
+  
   border: none;
   /* background-color: #09109b; */
 }
 
 .carousel-content {
+  
   display: flex;
   gap: 24px;
   margin: 24px;
 }
 .carousel-content nav {
+  
   padding: 10px 10px 10px 7px;
   background-color: #bdbecc59;
   width: 90px;
@@ -299,25 +345,30 @@ header {
   border-radius: 7px;
 }
 .logo-html {
+  
   width: 30px;
   /* background-color: ; */
   /* border-radius: 100px; */
 }
 .logo-css {
+  
   width: 30px;
   /* border-radius: 100%; */
 }
 .logo-js {
+  
   width: 30px;
   border-radius: 50%;
 }
 /*Contact me section**************************/
 .Contact-me {
+  
   width: 100%;
   height: 550px;
   background-color: #ffffff;
 }
 .Contact-me-container {
+  
   width: 100%;
   height: 550px;
   display: flex;
@@ -334,6 +385,7 @@ header {
   border-top-left-radius: 100px;
 }
 .Contact-me-content {
+  
   margin-top: 40px;
   width: 400px;
   height: 500px;
@@ -343,15 +395,18 @@ header {
   /* border-top-left-radius: 100px; */
 }
 .Contact-me-title {
+  
   text-align: center;
   font-size: 32px;
   font-weight: 900;
 }
 
 .Contact-me-description {
+  
   text-align: center;
 }
 .Contact-me-form {
+  
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -359,6 +414,7 @@ header {
   align-items: center;
 }
 .Contact-me-form input {
+  
   width: 80%;
   height: 40px;
   padding: 10px;
@@ -366,11 +422,13 @@ header {
   outline: none;
 }
 .textarea {
+  
   width: 80%;
   padding: 10px;
   outline: none;
 }
 .Contact-me-form a {
+  
   background-color: #fff;
   color: #565de8;
   border: 1px solid #ffffff;
@@ -379,7 +437,9 @@ header {
   font-size: 12px;
 }
 @media (max-width: 1062px) {
+  
   .landing-page {
+    
     margin-top: 70px;
     width: 70%;
     height: 300px;
@@ -388,14 +448,17 @@ header {
     gap: 12px;
   }
   .landing-page-part {
+    
     width: 35%;
   }
   .landing-page-part-name {
+    
     font-size: 28px;
     font-weight: 900;
     color: #25253e;
   }
   .section-work-Card {
+    
     width: 850px;
     height: 370px;
     background-color: #ffffff;
@@ -409,6 +472,7 @@ header {
   }
   .About-me-left,
   .About-me-right {
+    
     width: 420px;
     height: 300px;
     padding: 10px;
@@ -420,7 +484,9 @@ header {
 }
 
 @media (max-width: 891px) {
+  
   .landing-page {
+    
     margin-top: 70px;
     width: 70%;
     height: 300px;
@@ -429,14 +495,17 @@ header {
     gap: 12px;
   }
   .landing-page-part {
+    
     width: 40%;
   }
   .landing-page-part-name {
+    
     font-size: 28px;
     font-weight: 900;
     color: #25253e;
   }
   .section-work-Card {
+    
     width: 740px;
     height: 340px;
     background-color: #ffffff;
@@ -449,6 +518,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   .section-work-Card-left {
+    
     width: 100%;
     height: 100%;
     padding: 5px;
@@ -466,6 +536,7 @@ header {
   }
   .About-me-left,
   .About-me-right {
+    
     width: 378px;
     height: 300px;
     padding: 10px;
@@ -477,7 +548,9 @@ header {
 }
 
 @media (max-width: 768px) {
+  
   .section-work {
+    
     gap: 43px;
   }
   /* .landing-page {
@@ -497,6 +570,7 @@ header {
     color: #25253e;
   } */
   .section-work-Card {
+    
     width: 680px;
     height: 310px;
     background-color: #ffffff;
@@ -511,6 +585,7 @@ header {
   }
 
   .section-work-Card-left {
+    
     width: 100%;
     height: 100%;
     padding: 5px;
@@ -527,6 +602,7 @@ header {
     width: 90%;
   } */
   .section-work-Card-right {
+    
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -534,29 +610,35 @@ header {
   }
   .About-me-left,
   .About-me-right {
+    
     width: 341px;
     height: 300px;
     gap: 14px;
     /* background-color: rgb(0, 113, 212); */
   }
   .landing-page-description {
+    
     font-size: 14px;
   }
   .carousel-header {
+    
     font-size: 17px;
   }
   /*about us media query */
   .About-me-left h1 {
+    
     font-size: 33px;
   }
 
   .carousel-content nav {
+    
     width: 85px;
     height: 71px;
     border-radius: 7px;
   }
 }
 @media (max-width: 710px) {
+  
   /* .section-work {
     gap: 43px;
   } */
@@ -577,6 +659,7 @@ header {
     color: #25253e;
   } */
   .section-work-Card {
+    
     width: 630px;
     height: 290px;
     background-color: #ffffff;
@@ -591,6 +674,7 @@ header {
   }
 
   .section-work-Card-left {
+    
     width: 100%;
     height: 100%;
     padding: 5px;
@@ -607,48 +691,58 @@ header {
     width: 90%;
   } */
   .section-work-Card-right {
+    
     display: flex;
     flex-direction: column;
     gap: 10px;
     /* padding: 14px; */
   }
   .Card-right-title {
+    
     margin-top: 16px;
   }
   .Card-right-description {
+    
     font-size: 14px;
   }
 
   .landing-page-description {
+    
     font-size: 14px;
   }
   .carousel-header {
+    
     font-size: 17px;
   }
   /*about us media query */
   .About-me-left h1 {
+    
     font-size: 31px;
   }
 
   .About-me-left,
   .About-me-right {
+    
     width: 314px;
     height: 300px;
 
     /* background-color: rgb(0, 113, 212); */
   }
   .carousel-content nav {
+    
     width: 85px;
     height: 71px;
     border-radius: 7px;
   }
   .carousel-content {
+    
     display: flex;
     gap: 13px;
     margin: 21px;
   }
 }
 @media (max-width: 681px) {
+  
   /* .section-work {
     gap: 43px;
   } */
@@ -669,10 +763,12 @@ header {
     color: #25253e;
   } */
   .section-work-Card {
+    
     width: 619px;
     height: 262px;
   }
   .card-right-button {
+    
     padding: 8px 5px;
     border-radius: 7px;
     text-align: center;
@@ -681,6 +777,7 @@ header {
   }
 
   .section-work-Card-left {
+    
     width: 100%;
     height: 100%;
     padding: 5px;
@@ -697,19 +794,23 @@ header {
     width: 90%;
   } */
   .section-work-Card-right {
+    
     display: flex;
     flex-direction: column;
     gap: 13px;
     /* padding: 14px; */
   }
   .Card-right-title {
+    
     margin-top: 16px;
   }
   .Card-right-description {
+    
     font-size: 14px;
   }
 
   .landing-page-description {
+    
     font-size: 14px;
   }
   .carousel-header {
@@ -717,64 +818,78 @@ header {
   }
   /*about us media query */
   .About-me-left h1 {
+    
     font-size: 31px;
   }
 
   .About-me-left,
   .About-me-right {
+    
     width: 301px;
     height: 300px;
 
     /* background-color: rgb(0, 113, 212); */
   }
   .carousel-content nav {
+    
     width: 85px;
     height: 71px;
     border-radius: 7px;
   }
   .carousel-content {
+    
     display: flex;
     gap: 12px;
     margin: 17px;
   }
 }
 @media (max-width: 651px) {
+  
   header {
+    
     width: 100%;
     height: 130px;
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   .header-nav {
+    
     padding: 0px 40px;
   }
   .header-nav .hidden-menu {
+    
     display: none;
     gap: 12px;
   }
   .header-nav .menu-icon {
+    
     display: inline;
     font-size: 32px;
   }
   .landing-section {
+    
     width: 100%;
     height: 552px;
   }
 
   .section-work-Card {
+    
     width: 572px;
     height: 587px;
     flex-direction: column;
   }
   .order {
+    
     order: 0;
   }
 
   .card-right-button {
+    
     margin: 17px 0;
   }
 
   .section-work-Card-left {
+    
     width: 100%;
     height: 100%;
     padding: 5px;
@@ -785,9 +900,11 @@ header {
     width: 90%;
   } */
   .landing-page {
+    
     gap: 19px;
   }
   .section-work-Card-right {
+    
     width: 100%;
     height: 290px;
     display: flex;
@@ -796,6 +913,7 @@ header {
     /* padding: 14px; */
   }
   .About-me {
+    
     width: 100%;
     height: 845px;
     margin-top: 70px;
@@ -808,12 +926,14 @@ header {
   }
   .About-me-left,
   .About-me-right {
+    
     width: 552px;
     height: 300px;
     /* background-color: rgb(0, 113, 212); */
   }
 
   .carousel-content nav {
+    
     width: 100%;
     height: 55px;
     display: flex;
@@ -824,80 +944,99 @@ header {
     padding: 20px 5px;
   }
   .carousel-content {
+    
     display: flex;
     gap: 13px;
     margin: 21px;
     flex-direction: column;
   }
   .logo-js {
+    
     width: 46px;
   }
   .logo-css {
+    
     width: 46px;
   }
   .logo-html {
+    
     width: 46px;
   }
 }
 @media (max-width: 611px) {
   .section-work-Card {
+    
     width: 456px;
     height: 587px;
     flex-direction: column;
   }
   .About-me-left,
   .About-me-right {
+    
     width: 487px;
     height: 300px;
     /* background-color: rgb(0, 113, 212); */
   }
 }
 @media (max-width: 506px) {
+  
   .header-nav {
+    
     padding: 0px 30px;
   }
   .landing-section {
+    
     margin-top: -59px;
   }
   .section-work-Card {
+    
     width: 456px;
     height: 587px;
     flex-direction: column;
   }
   .landing-page {
+    
     width: 88%;
   }
   .landing-page-part-name {
+    
     font-size: 40px;
     font-weight: 900;
     color: #25253e;
   }
   .landing-page-part {
+    
     width: 79%;
   }
   .About-me-left,
   .About-me-right {
+    
     width: 462px;
     height: 300px;
     /* background-color: rgb(0, 113, 212); */
   }
 }
 @media (max-width: 484px) {
+  
   .landing-section {
+    
     margin-top: -126px;
   }
   .section-work-Card {
+    
     width: 400px;
     height: 587px;
     flex-direction: column;
   }
   .About-me-left,
   .About-me-right {
+    
     width: 400px;
     height: 300px;
     /* background-color: rgb(0, 113, 212); */
   }
   .carousel-content nav {
+    
     width: 100%;
     height: 15px;
     display: flex;
@@ -908,28 +1047,36 @@ header {
     padding: 25px 5px;
   }
   .carousel-header {
+    
     padding: 9px 10px;
   }
   .logo-js {
+    
     width: 32px;
   }
   .logo-css {
+    
     width: 32px;
   }
   .logo-html {
+    
     width: 32px;
+    
   }
 }
 @media (max-width: 425px) {
   .landing-section {
+    
     margin-top: -59px;
   }
   .section-work-Card {
+    
     width: 369px;
     height: 569px;
     flex-direction: column;
   }
   .carousel-content nav {
+    
     width: 100%;
     height: 15px;
     display: flex;
@@ -940,22 +1087,27 @@ header {
     padding: 25px 5px;
   }
   .logo-js {
+    
     width: 27px;
   }
   .logo-css {
+    
     width: 27px;
   }
   .logo-html {
+    
     width: 27px;
   }
   .About-me-left,
   .About-me-right {
+    
     width: 340px;
     height: 300px;
     /* background-color: rgb(0, 113, 212); */
   }
 
   .Contact-me-content {
+    
     width: 360px;
     height: 500px;
 
@@ -963,32 +1115,40 @@ header {
   }
 }
 @media (max-width: 398px) {
+  
   .header-nav {
+    
     padding: 0px 20px;
   }
   .landing-section {
+    
     margin-top: -59px;
   }
   .landing-page-part {
+    
     width: 100%;
   }
   .landing-page-part-name {
+    
     font-size: 38px;
     font-weight: 900;
     color: #25253e;
   }
   .section-work-Card {
+    
     width: 330px;
     height: 500px;
     flex-direction: column;
   }
   .About-me-left,
   .About-me-right {
+    
     width: 317px;
     height: 300px;
     /* background-color: rgb(0, 113, 212); */
   }
   .Contact-me-content {
+    
     width: 310px;
     height: 500px;
     /* border-top-left-radius: 100px; */
