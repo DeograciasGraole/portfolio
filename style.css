@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 html {
@@ -21,7 +21,7 @@ body {
 header {
   width: 100%;
   height: 80px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .header-nav {
   display: flex;
@@ -50,7 +50,6 @@ header {
 }
 /*SECTION LANDING PAGE**************************************************/
 .landing-section {
-  /* margin-top: 70px; */
   width: 100%;
   height: 500px;
   background-color: #fff;
@@ -251,10 +250,7 @@ header {
   gap: 12px;
   /* background-color: rgb(0, 113, 212); */
 }
-.About-me-right {
-  /* gap: 18px; */
-  /* background-color: rgb(0, 113, 212); */
-}
+
 .About-me-left h1 {
   font-size: 36px;
   font-weight: 900;
@@ -746,7 +742,7 @@ header {
   header {
     width: 100%;
     height: 130px;
-    /* background-color: #ffffff; */
+
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   .header-nav {
@@ -764,25 +760,7 @@ header {
     width: 100%;
     height: 552px;
   }
-  /* .section-work {
-    gap: 43px;
-  } */
-  /* .landing-page {
-    margin-top: 70px;
-    width: 70%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  } */
-  /* .landing-page-part {
-    width: 44%;
-  } */
-  /* .landing-page-part-name {
-    font-size: 28px;
-    font-weight: 900;
-    color: #25253e;
-  } */
+
   .section-work-Card {
     width: 572px;
     height: 587px;
