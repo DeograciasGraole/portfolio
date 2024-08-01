@@ -403,7 +403,7 @@ header {
   outline: none;
 }
 
-.Contact-me-form a {
+.Contact-me-form .card-right-button {
   background-color: #fff;
   color: #565de8;
   border: 1px solid #fff;

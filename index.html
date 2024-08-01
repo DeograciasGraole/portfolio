@@ -296,17 +296,33 @@
             to help with it!
           </p>
           <form class="Contact-me-form" action="">
-            <input type="text" placeholder="Lorem ipsum" />
-            <input type="mail" placeholder="loremipsum@gmail.com" />
+            <input
+              required="required"
+              type="text"
+              placeholder="Lorem ipsum"
+              maxlength="30"
+            />
+            <input
+              type="mail"
+              required="required"
+              placeholder="loremipsum@gmail.com"
+            />
             <textarea
               placeholder="Write your message here..."
+              required="required"
               class="textarea"
               rows="10"
               cols="100"
               name=""
               id=""
+              maxlength="500"
             ></textarea>
-            <a href="#" class="card-right-button">Get in touch</a>
+            <input
+              type="submit"
+              class="card-right-button"
+              value="Get in touch"
+            />
+            <!-- <a href="#" class="card-right-button">Get in touch</a> -->
           </form>
         </div>
       </div>
