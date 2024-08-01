@@ -160,9 +160,9 @@ header {
   transition: transform 0.3s ease-in-out;
 }
 
-/*  .section-work-Card:hover {
+.section-work-Card:hover {
   transform: scale(1.1);
-} */
+}
 
 .section-work-Card-right {
   width: 100%;
@@ -320,9 +320,9 @@ header {
   transition: transform 0.3s ease-in-out;
 }
 
-/* .carousel-content nav:hover {
+.carousel-content nav:hover {
   transform: scale(1.1);
-} */
+}
 
 .logo-html {
   width: 30px;
