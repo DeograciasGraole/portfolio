@@ -113,7 +113,7 @@ const Hero = () => {
             >
               <div className="spotlight-glow"></div>
               <img
-                src="src/components/assets/about-me-pic.png"
+                src="src/components/assets/aboutmepic.png"
                 alt="Devanta Ebison portrait"
                 loading="lazy"
               />
