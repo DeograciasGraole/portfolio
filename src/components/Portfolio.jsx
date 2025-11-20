@@ -1,6 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Portfolio.css";
+import Ecomerce from "../assets/Ecomerce.png";
+import MobileApp from "../assets/project1.png";
+import BrandIdentity from "../assets/project2.png";
+import DesignSystem from "../assets/project3.png";
 
 const Portfolio = () => {
   const projects = [
@@ -11,7 +15,7 @@ const Portfolio = () => {
         "A comprehensive e-commerce solution with seamless checkout and user experience",
       category: "E-COMMERCE",
       color: "yellow",
-      image: "src/components/assets/Ecomerce.png",
+      image: { Ecomerce },
       github: "https://github.com",
       preview: "https://example.com",
       icon: "🛒",
@@ -24,7 +28,7 @@ const Portfolio = () => {
         "User-centered mobile application with intuitive navigation and delightful interactions",
       category: "UX/UI DESIGN",
       color: "pink",
-      image: "src/components/assets/project1.png",
+      image: { MobileApp },
       github: "https://github.com",
       preview: "https://example.com",
       icon: "📱",
@@ -37,7 +41,7 @@ const Portfolio = () => {
         "Complete brand redesign including logo, visual system, and brand guidelines",
       category: "BRANDING",
       color: "light-blue",
-      image: "src/components/assets/project2.png",
+      image: { BrandIdentity },
       github: "https://github.com",
       preview: "https://example.com",
       icon: "🎨",
@@ -50,7 +54,7 @@ const Portfolio = () => {
         "Comprehensive design system for scalable product development",
       category: "DESIGN STRATEGY",
       color: "teal",
-      image: "src/components/assets/project3.png",
+      image: { DesignSystem },
       github: "https://github.com",
       preview: "https://example.com",
       icon: "⚙️",

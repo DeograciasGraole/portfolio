@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import "./Hero.css";
+import aboutPic from "../assets/aboutmepic.png";
 
 const Hero = () => {
   const parallaxRefs = useRef([]);
@@ -113,7 +114,7 @@ const Hero = () => {
             >
               <div className="spotlight-glow"></div>
               <img
-                src="src/components/assets/aboutmepic.png"
+                src={aboutPic}
                 alt="Devanta Ebison portrait"
                 loading="lazy"
               />
