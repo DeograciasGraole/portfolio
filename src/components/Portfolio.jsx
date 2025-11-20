@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Portfolio.css";
-import Ecomerce from "../assets/Ecomerce.png";
-import MobileApp from "../assets/project1.png";
-import BrandIdentity from "../assets/project2.png";
-import DesignSystem from "../assets/project3.png";
+import Ecomerce from "/src/assets/Ecomerce.png";
+import MobileApp from "/src/assets/project1.png";
+import BrandIdentity from "/src/assets/project2.png";
+import DesignSystem from "/src/assets/project3.png";
 
 const Portfolio = () => {
   const projects = [

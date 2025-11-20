@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import "./Hero.css";
-import aboutPic from "../assets/aboutmepic.png";
+import aboutPic from "/src/assets/aboutmepic.png";
 
 const Hero = () => {
   const parallaxRefs = useRef([]);
