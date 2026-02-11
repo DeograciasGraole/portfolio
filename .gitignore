@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build cache (avoids "does not have a commit checked out" from gh-pages cache)
+node_modules/.cache/
+.vite/
+
+# Build output (uncomment if you build on deploy; keep if you commit dist for GitHub Pages)
+# dist/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Editor / OS
+.DS_Store
+.vscode/
+*.log
+npm-debug.log*
+
+# Optional
+coverage/
+.parcel-cache/
