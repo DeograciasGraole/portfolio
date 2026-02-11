@@ -5,7 +5,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
   border: none;
   color: white;
   cursor: pointer;
@@ -16,7 +16,7 @@
   z-index: 1000;
   transition: all 0.3s ease;
 }
-
+/**/
 .chat-button:hover {
   box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
 }
@@ -60,7 +60,7 @@
 }
 
 .chat-dialog::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -12px;
   right: 40px;
@@ -140,7 +140,7 @@
 
 .chat-input:focus {
   outline: none;
-  border-color: #25D366;
+  border-color: #25d366;
 }
 
 .chat-dialog-footer {
@@ -157,7 +157,7 @@
   justify-content: center;
   gap: 8px;
   padding: 12px 20px;
-  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -283,4 +283,3 @@
     font-size: 13px;
   }
 }
-
