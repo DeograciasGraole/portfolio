@@ -17,58 +17,10 @@
   overflow: hidden;
 }
 
-.hero-ambient {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.hero-parallax-layer {
-  position: absolute;
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  filter: blur(40px);
-  opacity: 0.4;
-  mix-blend-mode: screen;
-  animation: ambientPulse 12s ease-in-out infinite alternate;
-}
-
-.hero-layer-1 {
-  background: rgba(106, 255, 190, 0.4);
-  top: -120px;
-  left: -80px;
-}
-
-.hero-layer-2 {
-  background: rgba(255, 107, 157, 0.35);
-  top: 10%;
-  right: 15%;
-}
-
-.hero-layer-3 {
-  background: rgba(78, 205, 196, 0.4);
-  bottom: -140px;
-  right: -60px;
-}
-
-@keyframes ambientPulse {
-  0% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
-
 .hero-content {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  position: relative;
-  z-index: 2;
 }
 
 .hero-title {

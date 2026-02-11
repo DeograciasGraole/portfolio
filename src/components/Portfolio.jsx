@@ -1,10 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Portfolio.css";
-import Ecomerce from "/src/assets/Ecomerce.png";
-import MobileApp from "/src/assets/project1.png";
-import BrandIdentity from "/src/assets/project2.png";
-import DesignSystem from "/src/assets/project3.png";
 
 const Portfolio = () => {
   const projects = [
@@ -15,50 +11,85 @@ const Portfolio = () => {
         "A comprehensive e-commerce solution with seamless checkout and user experience",
       category: "E-COMMERCE",
       color: "yellow",
-      image: { Ecomerce },
-      github: "https://github.com",
-      preview: "https://example.com",
+      image: "/assets/Ecomerce.png",
+      github: "https://github.com/DeograciasGraole/ecommerce/tree/main",
+      preview: "https://ecommercecodigo.netlify.app/",
       icon: "🛒",
-      highlights: ["UX Strategy", "Design System", "Checkout Flow"],
+      highlights: ["HTML/CSS/JavaScript", "UI DESIGN", "RESPONSIVE DESIGN"],
     },
     {
       id: 2,
-      title: "Mobile App Design",
+      title: "Omnifood App Front-end",
       description:
-        "User-centered mobile application with intuitive navigation and delightful interactions",
-      category: "UX/UI DESIGN",
+        "User-centered website application with intuitive navigation and delightful interactions",
+      category: "html/css/JavaScript/UI DESIGN",
       color: "pink",
-      image: { MobileApp },
-      github: "https://github.com",
-      preview: "https://example.com",
+      image: "/assets/project1.png",
+      github: "https://github.com/DeograciasGraole/omnifood",
+      preview: "https://codigo-omnifood.netlify.app/",
       icon: "📱",
-      highlights: ["Product Vision", "Prototype", "Motion"],
+      highlights: ["HTML/CSS/JavaScript", "UI DESIGN", "RESPONSIVE DESIGN"],
     },
     {
       id: 3,
-      title: "Brand Identity",
+      title: "Book-review Website",
       description:
-        "Complete brand redesign including logo, visual system, and brand guidelines",
-      category: "BRANDING",
+        "Book-review website built with Laravel that allows users to easily discover and explore books. The platform includes search functionality and smart filters for finding top-rated books based on different time periods.",
+      category: "Laravel",
       color: "light-blue",
-      image: { BrandIdentity },
-      github: "https://github.com",
-      preview: "https://example.com",
+      image: "/assets/project2.png",
+      github: "https://github.com/DeograciasGraole/Book-review",
+
       icon: "🎨",
-      highlights: ["Visual System", "Guidelines", "Launch Kit"],
+      highlights: ["Laravel", "PHP", "MySQL"],
     },
     {
       id: 4,
-      title: "Design System",
+      title: "blogApi-with-Laravel",
       description:
-        "Comprehensive design system for scalable product development",
-      category: "DESIGN STRATEGY",
+        "BlogApi-with-Laravel is a web application built with Laravel that allows users to easily create, read, update, and delete blog posts.",
+      category: "Laravel",
       color: "teal",
-      image: { DesignSystem },
-      github: "https://github.com",
-      preview: "https://example.com",
+      image: "/assets/project3.png",
+      github: "https://github.com/DeograciasGraole/blogApi-with-Laravel",
       icon: "⚙️",
-      highlights: ["Component Library", "Tokens", "Accessibility"],
+      highlights: ["Laravel", "PHP", "SQLITE"],
+    },
+    {
+      id: 5,
+      title: "Language learning Api with Laravel",
+      description:
+        "Language learning Api with Laravel is api backend for language learning app that allows users to easily read, update ,query lessson ,grammars vocabulary quizzes and tracking their progress, and delete language learning data.",
+      category: "Laravel",
+      color: "teal",
+      image: "/assets/project1.png",
+      github: "https://github.com/DeograciasGraole/api",
+      icon: "📱",
+      highlights: ["Laravel", "PHP", "SQLITE"],
+    },
+    {
+      id: 6,
+      title: "language learning Front-end with Flutter",
+      description:
+        "A Laravel application for creating and managing language learning app, with tracking progress and quizzes.",
+      category: "Laravel",
+      color: "teal",
+      image: "/assets/project1.png",
+      github: "https://github.com/DeograciasGraole/lang",
+      icon: "⚙️",
+      highlights: ["Flutter", "Dart", "DIO"],
+    },
+    {
+      id: 7,
+      title: "Events Management with Laravel",
+      description:
+        "A Laravel application for creating and managing events, with attendee tracking and automated email reminders.",
+      category: "Laravel",
+      color: "teal",
+      image: "/assets/project1.png",
+      github: "https://github.com/DeograciasGraole/eventsManagement",
+      icon: "⚙️",
+      highlights: ["Laravel", "PHP", "SQLITE"],
     },
   ];
 

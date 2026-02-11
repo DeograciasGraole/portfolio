@@ -60,7 +60,7 @@ const Navigation = () => {
         <div className="nav-container">
           <Link to="/" className="nav-logo">
             <div className="nav-logo-rectangle"></div>
-            <span>Deograce Graole</span>
+            <span>DEOGRACE GRAOLE</span>
           </Link>
 
           {/* Desktop Menu */}

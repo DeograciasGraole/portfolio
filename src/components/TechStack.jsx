@@ -1,82 +1,54 @@
-import React, { useEffect, useRef } from 'react'
-import { motion } from 'framer-motion'
-import './TechStack.css'
+import React from "react";
+import { motion } from "framer-motion";
+import "./TechStack.css";
 
 const stacks = [
   {
-    name: 'React',
-    category: 'Frontend',
-    description: 'SPA architecture, hooks, performance profiling, design systems.',
-    tag: '⚛',
-    experience: '7 yrs'
+    name: "React",
+    category: "Frontend",
+    description:
+      "SPA architecture, hooks, performance profiling, design systems.",
+    tag: "⚛",
   },
   {
-    name: 'Laravel',
-    category: 'Backend',
-    description: 'API design, authentication flows, queue / event orchestration.',
-    tag: '🎯',
-    experience: '6 yrs'
+    name: "Laravel",
+    category: "Backend",
+    description:
+      "API design, authentication flows, queue / event orchestration.",
+    tag: "🎯",
   },
   {
-    name: 'Flutter',
-    category: 'Cross-Platform',
-    description: 'Native-feel product launches on iOS, Android, and desktop.',
-    tag: '💠',
-    experience: '4 yrs'
+    name: "Flutter",
+    category: "Cross-Platform",
+    description: "Native-feel product launches on iOS, Android, and desktop.",
+    tag: "💠",
   },
   {
-    name: 'C++',
-    category: 'Systems',
-    description: 'High-performance modules, WebAssembly bridges, realtime logic.',
-    tag: '🧠',
-    experience: '5 yrs'
+    name: "C++",
+    category: "Systems",
+    description:
+      "High-performance modules, WebAssembly bridges, realtime logic.",
+    tag: "🧠",
   },
   {
-    name: 'JavaScript',
-    category: 'Languages',
-    description: 'Modern ES standards, toolchains, testing, and runtime ergonomics.',
-    tag: '⚡',
-    experience: '9 yrs'
+    name: "JavaScript",
+    category: "Languages",
+    description:
+      "Modern ES standards, toolchains, testing, and runtime ergonomics.",
+    tag: "⚡",
   },
   {
-    name: 'Docker',
-    category: 'DevOps',
-    description: 'Containerized pipelines, local parity, and scalable deployments.',
-    tag: '🐳',
-    experience: '5 yrs'
-  }
-]
+    name: "Docker",
+    category: "DevOps",
+    description:
+      "Containerized pipelines, local parity, and scalable deployments.",
+    tag: "🐳",
+  },
+];
 
 const TechStack = () => {
-  const orbRefs = useRef([])
-
-  useEffect(() => {
-    const handleScroll = () => {
-      orbRefs.current.forEach((orb) => {
-        if (!orb) return
-        const speed = parseFloat(orb.dataset.speed || '0.1')
-        const offset = window.scrollY * speed
-        orb.style.transform = `translate3d(0, ${offset}px, 0)`
-      })
-    }
-
-    handleScroll()
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
   return (
     <section className="tech-stack">
-      <div className="tech-stack-ambient">
-        {[0.08, 0.16, 0.32].map((speed, index) => (
-          <span
-            key={speed}
-            className={`tech-stack-orb orb-${index + 1}`}
-            data-speed={speed}
-            ref={(el) => (orbRefs.current[index] = el)}
-          ></span>
-        ))}
-      </div>
       <div className="tech-stack-container">
         <motion.div
           className="tech-stack-header"
@@ -88,8 +60,9 @@ const TechStack = () => {
           <p className="tech-stack-label">Tech Stack</p>
           <h2>The tools I rely on to move products from idea to impact.</h2>
           <p>
-            From polished mobile apps to resilient backend services, I combine proven frameworks with modern
-            deployment practices to keep velocity high without sacrificing craft.
+            From polished mobile apps to resilient backend services, I combine
+            proven frameworks with modern deployment practices to keep velocity
+            high without sacrificing craft.
           </p>
         </motion.div>
 
@@ -116,9 +89,7 @@ const TechStack = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TechStack
-
-
+export default TechStack;

@@ -17,14 +17,14 @@ const Footer = () => {
         >
           <div className="footer-links">
             <a
-              href="https://linkedin.com"
+              href="www.linkedin.com/in/deogracias-wampoyi-oleko-8399b1226"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-link"
             >
               LinkedIn
             </a>
-            <a
+            {/* <a
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -39,9 +39,9 @@ const Footer = () => {
               className="footer-link"
             >
               Dribbble
-            </a>
+            </a> */}
             <a
-              href="https://github.com/DeograciasGraole/"
+              href="https://github.com/DeograciasGraole"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-link"
@@ -50,7 +50,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="footer-copyright">
-            <p>© {currentYear} Deograce Graole. All rights reserved.</p>
+            <p>© {currentYear} Deogracias Graole. All rights reserved.</p>
           </div>
         </motion.div>
       </div>

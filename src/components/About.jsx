@@ -1,6 +1,6 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import './About.css'
+import React from "react";
+import { motion } from "framer-motion";
+import "./About.css";
 
 const About = () => {
   return (
@@ -22,7 +22,7 @@ const About = () => {
           >
             ABOUT
           </motion.h2>
-          
+
           <div className="about-grid">
             <motion.div
               className="about-text"
@@ -32,13 +32,15 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <p>
-                With a passion for creating meaningful digital experiences, I've spent years 
-                honing my craft in product design, user experience, and design strategy. 
-                My approach combines research-driven insights with creative problem-solving 
-                to deliver solutions that resonate with users and drive business results.
+                My journey into coding began with a curiosity about electronics.
+                I wasn’t very skilled in it, but I loved the idea of building
+                things. One day, I found Java and C++ tutorials on my sister’s
+                computer—she was studying programming at university. Though she
+                didn’t encourage me to dive in, worried it would take up too
+                much of my time.
               </p>
             </motion.div>
-            
+
             <motion.div
               className="about-text"
               initial={{ opacity: 0, x: 30 }}
@@ -47,18 +49,17 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               <p>
-                I believe in the power of collaboration, data-informed decisions, and 
-                continuous learning. Every project is an opportunity to push boundaries, 
-                challenge assumptions, and create something that makes a real difference 
-                in people's lives.
+                Still, my curiosity pushed me to start learning in secret. After
+                finishing high school and earning my diploma, I moved abroad to
+                continue my education. That small, quiet beginning sparked a
+                lasting passion for software development.
               </p>
             </motion.div>
           </div>
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
-
+export default About;
