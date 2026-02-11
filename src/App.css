@@ -1,0 +1,48 @@
+.App {
+  min-height: 100vh;
+  background-color: var(--beige);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--beige);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--black);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive scrollbar */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+}
+
+/* Prevent horizontal scroll */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure containers don't overflow */
+section, div, article {
+  box-sizing: border-box;
+}
+
