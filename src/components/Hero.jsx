@@ -56,7 +56,7 @@ const Hero = () => {
       <section className="hero-spotlight">
         <div className="spotlight-grid">
           <div className="spotlight-top">
-            <span className="spotlight-logo">DEVANTA EBISON</span>
+            <span className="spotlight-logo">DEOGRACE GRAOLE</span>
             <button className="spotlight-menu">
               Menu <span>—</span>
             </button>
