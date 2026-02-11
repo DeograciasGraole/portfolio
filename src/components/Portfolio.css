@@ -6,14 +6,13 @@
 }
 
 .portfolio-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
   background-size: 40px 40px;
   pointer-events: none;
@@ -28,7 +27,7 @@
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(322px, 1fr));
   gap: 40px;
   margin-top: 60px;
 }
@@ -37,7 +36,11 @@
   position: relative;
   border-radius: 28px;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(12, 12, 12, 0.4), rgba(158, 255, 199, 0.4));
+  background: linear-gradient(
+    135deg,
+    rgba(12, 12, 12, 0.4),
+    rgba(158, 255, 199, 0.4)
+  );
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: default;
 }
@@ -145,7 +148,11 @@
 .portfolio-hero-glow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 20% 20%, rgba(158, 255, 199, 0.35), transparent 60%);
+  background: radial-gradient(
+    circle at 20% 20%,
+    rgba(158, 255, 199, 0.35),
+    transparent 60%
+  );
   mix-blend-mode: screen;
   opacity: 0.6;
 }
@@ -334,4 +341,3 @@
     height: 42px;
   }
 }
-

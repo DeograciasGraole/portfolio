@@ -1,26 +1,53 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
-import './Contact.css'
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import "./Contact.css";
+
+const FORMSPREE_ID = import.meta.env.VITE_FORMSPREE_ID || "xgolobez";
+const FORMSPREE_URL = `https://formspree.io/f/${FORMSPREE_ID}`;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  })
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState(""); // "loading" | "success" | "error"
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
+      [e.target.name]: e.target.value,
+    });
+  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted:', formData)
-  }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMessage("");
+
+    try {
+      const response = await fetch(FORMSPREE_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        const data = await response.json();
+        setStatus("error");
+        setErrorMessage(
+          data.error || "Something went wrong. Please try again."
+        );
+      }
+    } catch (err) {
+      setStatus("error");
+      setErrorMessage("Failed to send message. Please try again later.");
+    }
+  };
 
   return (
     <section id="contact" className="contact-section">
@@ -41,7 +68,7 @@ const Contact = () => {
           >
             GET IN TOUCH
           </motion.h2>
-          
+
           <div className="contact-grid">
             <motion.div
               className="contact-info"
@@ -51,20 +78,20 @@ const Contact = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <p className="contact-text">
-                I'm always open to discussing new projects, creative ideas, or 
-                opportunities to be part of your vision. Let's create something 
+                I'm always open to discussing new projects, creative ideas, or
+                opportunities to be part of your vision. Let's create something
                 amazing together.
               </p>
               <div className="contact-details">
                 <a href="mailto:hello@devanta.com" className="contact-link">
-                  hello@devanta.com
+                  Send me an email
                 </a>
-                <a href="tel:+1234567890" className="contact-link">
-                  +1 (234) 567-890
+                <a href="tel:+905338613619" className="contact-link">
+                  Tell me on whatsapp
                 </a>
               </div>
             </motion.div>
-            
+
             <motion.form
               className="contact-form"
               onSubmit={handleSubmit}
@@ -106,21 +133,31 @@ const Contact = () => {
                   className="form-input form-textarea"
                 />
               </div>
+              {status === "success" && (
+                <p className="form-message form-message--success">
+                  Thanks! Your message has been sent.
+                </p>
+              )}
+              {status === "error" && (
+                <p className="form-message form-message--error">
+                  {errorMessage}
+                </p>
+              )}
               <motion.button
                 type="submit"
                 className="form-submit"
-                whileHover={{ scale: 1.05, x: 5 }}
-                whileTap={{ scale: 0.95 }}
+                disabled={status === "loading"}
+                whileHover={status !== "loading" ? { scale: 1.05, x: 5 } : {}}
+                whileTap={status !== "loading" ? { scale: 0.95 } : {}}
               >
-                SEND MESSAGE →
+                {status === "loading" ? "Sending..." : "SEND MESSAGE →"}
               </motion.button>
             </motion.form>
           </div>
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
-
+export default Contact;
