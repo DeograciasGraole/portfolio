@@ -1,14 +1,20 @@
 # Dependencies
 node_modules/
 
+# Build cache (avoids "does not have a commit checked out" from gh-pages cache)
+node_modules/.cache/
+.vite/
+.cache/
+
 # Build output
 dist/
 build/
 
-# Local env files
+# Env files
 .env
 .env.local
 .env.*.local
+*.local
 
 # Logs
 *.log
@@ -22,8 +28,6 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
-# Vite
-*.local
-
-# Cache
-.cache/
+# Optional
+coverage/
+.parcel-cache/
