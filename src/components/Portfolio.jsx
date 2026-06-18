@@ -6,6 +6,46 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
+      title: "Koliago Grocery delivery app ",
+      description:
+        "Koliago is a ONLINE grocery and everyday essentials delivery app I have contributed to, built with Flutter and Laravel, providing a seamless shopping experience for users.",
+      category: "E-COMMERCE",
+      color: "yellow",
+      image: "/assets/Ecomerce.png",
+      github: "https://github.com/samuelsi9/kolia-api",
+      preview: "https://apps.apple.com/us/app/koliago/id6760557417",
+      icon: "📲",
+      highlights: ["Flutter/Laravel", "Front-Back END", "RESPONSIVE DESIGN"],
+    },
+
+    {
+      id: 2,
+      title: "Clearia AI",
+      description:
+        " Cleria is  an AI-powered assistant for PDF documents.Generates summaries, extracts key points, and generatws questions based on uploaded documents. with subscription monthly. I have I have contributed to this project.",
+      category: "Aritificial Intelligence",
+      color: "yellow",
+      image: "/assets/Ecomerce.png",
+      github: "https://github.com/DeograciasGraole/divosAI",
+      preview: "https://cleria.netlify.app/",
+      icon: "🗃️",
+      highlights: ["React/FastAPI", "UI DESIGN", "RESPONSIVE DESIGN"],
+    },
+    {
+      id: 3,
+      title: "Betting Platform ",
+      description:
+        "A betting website allows users to place bets on football matches, view odds,live direct of score  and track their betting history also payment process integrate. I have contributed to this project.",
+      category: "E-COMMERCE",
+      color: "yellow",
+      image: "/assets/Ecomerce.png",
+      github: "https://github.com/samuelsi9/betting-api",
+      preview: "https://afri-bet.org/",
+      icon: "⚽",
+      highlights: ["React/FastAPI", "UI DESIGN", "RESPONSIVE DESIGN"],
+    },
+    {
+      id: 4,
       title: "E-Commerce Platform",
       description:
         "A comprehensive e-commerce solution with seamless checkout and user experience",
@@ -18,7 +58,7 @@ const Portfolio = () => {
       highlights: ["HTML/CSS/JavaScript", "UI DESIGN", "RESPONSIVE DESIGN"],
     },
     {
-      id: 2,
+      id: 5,
       title: "Omnifood App Front-end",
       description:
         "User-centered website application with intuitive navigation and delightful interactions",
@@ -31,7 +71,7 @@ const Portfolio = () => {
       highlights: ["HTML/CSS/JavaScript", "UI DESIGN", "RESPONSIVE DESIGN"],
     },
     {
-      id: 3,
+      id: 6,
       title: "Book-review Website",
       description:
         "Book-review website built with Laravel that allows users to easily discover and explore books. The platform includes search functionality and smart filters for finding top-rated books based on different time periods.",
@@ -44,7 +84,7 @@ const Portfolio = () => {
       highlights: ["Laravel", "PHP", "MySQL"],
     },
     {
-      id: 4,
+      id: 7,
       title: "blogApi-with-Laravel",
       description:
         "BlogApi-with-Laravel is a web application built with Laravel that allows users to easily create, read, update, and delete blog posts.",
@@ -56,7 +96,7 @@ const Portfolio = () => {
       highlights: ["Laravel", "PHP", "SQLITE"],
     },
     {
-      id: 5,
+      id: 8,
       title: "Language learning Api with Laravel",
       description:
         "Language learning Api with Laravel is api backend for language learning app that allows users to easily read, update ,query lessson ,grammars vocabulary quizzes and tracking their progress, and delete language learning data.",
@@ -68,7 +108,7 @@ const Portfolio = () => {
       highlights: ["Laravel", "PHP", "SQLITE"],
     },
     {
-      id: 6,
+      id: 9,
       title: "language learning Front-end with Flutter",
       description:
         "A Laravel application for creating and managing language learning app, with tracking progress and quizzes.",
@@ -80,7 +120,7 @@ const Portfolio = () => {
       highlights: ["Flutter", "Dart", "DIO"],
     },
     {
-      id: 7,
+      id: 10,
       title: "Events Management with Laravel",
       description:
         "A Laravel application for creating and managing events, with attendee tracking and automated email reminders.",
